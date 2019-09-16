@@ -1,0 +1,32 @@
+server:
+  port: 8080    #应用端口   默认8080
+  servlet:
+    context-path: /manager    #请求接口的根路径 例如 http://localhost:8080/manager/
+  tomcat:
+    max-threads: 500          #
+    min-spare-threads: 10
+    max-connections: 500
+    accept-count: 5000
+    max-http-post-size: 2097152
+    uri-encoding: UTF-8
+
+spring:
+  profiles:
+    active: '@env@'
+  datasource:
+    # 使用阿里的Druid连接池
+    type: com.alibaba.druid.pool.DruidDataSource
+    driverClassName: com.mysql.jdbc.Driver
+
+# Mybatis配置
+mybatis:
+  mapper-locations: classpath:mybatis/mapper/**/*.xml
+  configLocation: classpath:mybatis-config.xml
+
+#pagehelper
+pagehelper:
+  helper-dialect: mysql
+  reasonable: true
+  supportMethodsArguments: true
+  params: pageNum=pageNum;pageSize=pageSize;count=countSql;
+  row-bounds-with-count: true

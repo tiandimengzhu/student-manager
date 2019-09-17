@@ -5,24 +5,24 @@ spring:
     druid:
       username: root
       password: 123456
-      initial-size: 2
-      max-active: 100
-      time-between-eviction-runs-millis: 60000
-      min-evictable-idle-time-millis: 300000
-      validation-query: SELECT 1 FROM DUAL
-      test-while-idle: true
-      test-on-borrow: false
-      test-on-return: false
-      pool-prepared-statements: true
-      max-pool-prepared-statement-per-connection-size: 20
-      filter:
+      initial-size: 3  #初始化连接
+      max-active: 100  #最大连接数
+      time-between-eviction-runs-millis: 60000  #连接有效性检测时间（单位：ms）
+      min-evictable-idle-time-millis: 300000    #最少空闲时间，空闲连接最少空闲多久后可被清除
+      validation-query: SELECT 1 FROM DUAL    #指定获取连接时连接校验的sql查询语句
+      test-while-idle: true    #当连接空闲时，是否执行连接测试
+      test-on-borrow: false    #当从连接池借用连接时，是否测试该连接
+      test-on-return: false    #在连接归还到连接池时是否测试该连接.
+      pool-prepared-statements: true   #指定是否池化statements，可以缓存执行计划
+      max-pool-prepared-statement-per-connection-size: 20   #最大池化statements的数量
+      filter:  # 用于统计监控信息
         stat:
-          log-slow-sql: true
-          slow-sql-millis: 2000
+          log-slow-sql: true   #慢sql记录
+          slow-sql-millis: 2000 # 慢sql的标准 默认是3000也就是3秒
           enabled: true
         config:
           enabled: true
-        wall:
+        wall:  #可以起到拦截作用，从而形成SQL的白名单和黑名单。防御sql注入的
           enabled: true
           config:
             multi-statement-allow: true

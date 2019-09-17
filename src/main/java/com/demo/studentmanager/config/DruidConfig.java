@@ -13,7 +13,7 @@ import javax.sql.DataSource;
 /**
  * Druid配置
  *
- * @author huzongtao
+ * @author mengzhu
  */
 @Configuration
 @MapperScan(basePackages = "com.demo.studentmanager.dao")

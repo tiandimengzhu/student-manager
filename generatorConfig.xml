@@ -63,14 +63,12 @@
 
 
 
-        <table schema="" tableName="student" enableCountByExample="true" enableUpdateByExample="true" enableDeleteByExample="true" enableSelectByExample="true" selectByExampleQueryId="true">
+        <table schema="" tableName="student" enableCountByExample="true" enableUpdateByExample="true" enableDeleteByExample="true" enableSelectByExample="true" selectByExampleQueryId="true" domainObjectName="Student">
             <property name="useActualColumnNames" value="false"/>
             <generatedKey column="id" sqlStatement="MySql" identity="true"/>
             <domainObjectRenamingRule searchString="^App" replaceString=""/>
-            <columnOverride column="tenant_type" javaType="java.lang.Integer"/>
-            <columnOverride column="type" javaType="java.lang.Integer"/>
-            <columnOverride column="amount" javaType="java.lang.Long"/>
-            <ignoreColumn column="update_time" />
+<!--            <columnOverride column="type" javaType="java.lang.Integer"/>-->
+<!--            <ignoreColumn column="update_time" />-->
         </table>
 
     </context>

@@ -82,9 +82,6 @@
         <profile>
             <id>mybatis-gen</id>
             <properties>
-                <jdbc.driver.path>
-                    ${user.home}/.m2/repository/mysql/mysql-connector-java/5.1.38/mysql-connector-java-5.1.38.jar
-                </jdbc.driver.path>
                 <jdbc.database>school</jdbc.database>
                 <jdbc.url>jdbc:mysql://localhost:3306/${jdbc.database}</jdbc.url>
                 <jdbc.user>root</jdbc.user>

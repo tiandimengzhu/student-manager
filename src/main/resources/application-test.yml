@@ -5,34 +5,35 @@ spring:
     druid:
       username: root
       password: 123456
-      initial-size: 2
-      max-active: 100
-      time-between-eviction-runs-millis: 60000
-      min-evictable-idle-time-millis: 300000
-      validation-query: SELECT 1 FROM DUAL
-      test-while-idle: true
-      test-on-borrow: false
-      test-on-return: false
-      pool-prepared-statements: true
-      max-pool-prepared-statement-per-connection-size: 20
-      filter:
+      initial-size: 3  #初始化连接
+      max-active: 100  #最大连接数
+      time-between-eviction-runs-millis: 60000  #连接有效性检测时间（单位：ms）
+      min-evictable-idle-time-millis: 300000    #最少空闲时间，空闲连接最少空闲多久后可被清除
+      validation-query: SELECT 1 FROM DUAL    #指定获取连接时连接校验的sql查询语句
+      test-while-idle: true    #当连接空闲时，是否执行连接测试
+      test-on-borrow: false    #当从连接池借用连接时，是否测试该连接
+      test-on-return: false    #在连接归还到连接池时是否测试该连接.
+      #打开PSCache，并且指定每个连接上PSCache的大小
+      pool-prepared-statements: true   #指定是否池化statements，可以缓存执行计划
+      max-pool-prepared-statement-per-connection-size: 20   #最大池化statements的数量
+      filter:  # 用于统计监控信息
         stat:
-          log-slow-sql: true
-          slow-sql-millis: 2000
-          enabled: true
+          log-slow-sql: true   #慢sql记录
+          slow-sql-millis: 2000 # 慢sql的标准 默认是3000也就是3秒
+          enabled: true       #默认是false 配置true为启动
         config:
-          enabled: true
-        wall:
-          enabled: true
+          enabled: true      #默认是false 配置true是启动
+        wall:  #可以起到拦截作用，从而形成SQL的白名单和黑名单。防御sql注入的
+          enabled: true      #默认是false 配置true是启动
           config:
-            multi-statement-allow: true
+            multi-statement-allow: true  #允许批处理，执行批量sql，比如批量插入和批量更新sql
         encoding:
           enabled: true
       stat-view-servlet:
-        enabled: true
-        url-pattern: /druid-admin/*
-        login-username: admin
-        login-password: admin
+        enabled: true       #默认是false 配置true是启动
+        url-pattern: /druid-admin/*  #监控页面的访问地址
+        login-username: admin        #访问监控页面的帐号
+        login-password: 123456       #访问监控页面的密码
 
 #开启文档
 swagger:

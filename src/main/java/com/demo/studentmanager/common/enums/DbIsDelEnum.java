@@ -1,6 +1,5 @@
 package com.demo.studentmanager.common.enums;
 
-import java.util.HashMap;
 import java.util.Map;
 
 /**

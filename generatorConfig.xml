@@ -4,26 +4,27 @@
         "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
 
 <generatorConfiguration>
-    <!--<properties resource="classpath*:db.propertis"/>-->
-
-    <classPathEntry location="${jdbc.driver.path}" />
-
 
     <context id="MysqlTables" targetRuntime="MyBatis3" defaultModelType="flat">
+        <!-- 生成的Java文件的编码 -->
+        <property name="javaFileEncoding" value="UTF-8"/>
         <!-- 遇到sql关键字添加转义 -->
         <property name="autoDelimitKeywords" value="true"/>
-        <property name="beginningDelimiter" value="`"/>
-        <property name="endingDelimiter" value="`"/>
+        <!-- 格式化XML代码 -->
+        <property name="xmlFormatter" value="org.mybatis.generator.api.dom.DefaultXmlFormatter"/>
         <!--生成mapper.xml时覆盖原文件-->
         <plugin type="org.mybatis.generator.plugins.UnmergeableXmlMappersPlugin" />
         <!--生成实体类的时候默认实现序列化接口-->
         <plugin type="org.mybatis.generator.plugins.SerializablePlugin"/>
-
-        <plugin type="org.mybatis.generator.plugins.SerializablePlugin" />
+        <!-- 生成带有fluent风格的model代码。 -->
         <plugin type="org.mybatis.generator.plugins.FluentBuilderMethodsPlugin"/>
+        <!-- 生成带有fluent风格的model代码。 -->
         <plugin type="org.mybatis.generator.plugins.MapperAnnotationPlugin"/>
+        <!-- 该插件给实体类添加toString() -->
         <plugin type="org.mybatis.generator.plugins.ToStringPlugin"/>
+        <!-- 用来在XXXExample类中生成大小写敏感的LIKE方法 -->
         <plugin type="org.mybatis.generator.plugins.CaseInsensitiveLikePlugin"/>
+        <!-- 自动生成equals方法和hashcode方法 -->
         <plugin type="org.mybatis.generator.plugins.EqualsHashCodePlugin"/>
         <!--<plugin type="tk.mybatis.mapper.generator.MapperPlugin">-->
           <!--<property name="mappers" value="com.rtmap.overlord.meal.api.util.MyMapper"/>-->
@@ -63,12 +64,22 @@
 
 
 
-        <table schema="" tableName="student" enableCountByExample="true" enableUpdateByExample="true" enableDeleteByExample="true" enableSelectByExample="true" selectByExampleQueryId="true" domainObjectName="Student">
-            <property name="useActualColumnNames" value="false"/>
+        <table schema="" tableName="student" domainObjectName="Student">
+            <!--生成insert相关的语句返回主键的配置 -->
             <generatedKey column="id" sqlStatement="MySql" identity="true"/>
-            <domainObjectRenamingRule searchString="^App" replaceString=""/>
-<!--            <columnOverride column="type" javaType="java.lang.Integer"/>-->
-<!--            <ignoreColumn column="update_time" />-->
+            <!-- 重写字段类型 -->
+            <columnOverride column="is_del" javaType="java.lang.Integer"/>
+            <!-- 生成mapper的时候忽略字段 -->
+            <ignoreColumn column="update_time" />
+        </table>
+
+        <table schema="" tableName="student_score" domainObjectName="StudentScore">
+            <!--生成insert相关的语句返回主键的配置 -->
+            <generatedKey column="id" sqlStatement="MySql" identity="true"/>
+            <!-- 重写字段类型 -->
+            <columnOverride column="is_del" javaType="java.lang.Integer"/>
+            <!-- 生成mapper的时候忽略字段 -->
+            <ignoreColumn column="update_time" />
         </table>
 
     </context>

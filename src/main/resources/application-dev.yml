@@ -31,7 +31,7 @@ spring:
           enabled: true
       stat-view-servlet:
         enabled: true       #默认是false 配置true是启动
-        url-pattern: /druid-admin/*  #监控页面的访问地址
+        url-pattern: /druid/*  #监控页面的访问地址
         login-username: admin        #访问监控页面的帐号
         login-password: 123456       #访问监控页面的密码
 

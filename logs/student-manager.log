@@ -1,0 +1,44 @@
+2019-09-20 15:34:37,691:INFO main (StartupInfoLogger.java:50) - Starting StudentManagerApplication on LAPTOP-KAAGVC4H with PID 11972 (D:\WorkSpance\platform\student-manager\target\classes started by lihang in D:\WorkSpance\platform\student-manager)
+2019-09-20 15:34:37,892:INFO main (SpringApplication.java:652) - The following profiles are active: dev
+2019-09-20 15:34:44,615:INFO main (PostProcessorRegistrationDelegate.java:330) - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$3dd04830] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-20 15:34:46,080:INFO main (TomcatWebServer.java:90) - Tomcat initialized with port(s): 8080 (http)
+2019-09-20 15:34:46,097:INFO main (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8080"]
+2019-09-20 15:34:46,106:INFO main (DirectJDKLog.java:173) - Starting service [Tomcat]
+2019-09-20 15:34:46,107:INFO main (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-09-20 15:34:46,255:INFO main (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+2019-09-20 15:34:46,256:INFO main (ServletWebServerApplicationContext.java:284) - Root WebApplicationContext: initialization completed in 8012 ms
+2019-09-20 15:34:51,917:INFO main (EndpointLinksResolver.java:58) - Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-09-20 15:34:52,054:INFO main (PropertySourcedRequestMappingHandlerMapping.java:69) - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-09-20 15:34:52,381:INFO main (ExecutorConfigurationSupport.java:171) - Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-20 15:34:52,488:INFO main (WelcomePageHandlerMapping.java:54) - Adding welcome page: class path resource [static/index.html]
+2019-09-20 15:34:53,267:INFO main (DocumentationPluginsBootstrapper.java:160) - Context refreshed
+2019-09-20 15:34:53,318:INFO main (DocumentationPluginsBootstrapper.java:163) - Found 1 custom documentation plugin(s)
+2019-09-20 15:34:53,377:INFO main (ApiListingReferenceScanner.java:41) - Scanning for api listing references
+2019-09-20 15:34:53,575:INFO main (DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8080"]
+2019-09-20 15:34:53,600:INFO main (TomcatWebServer.java:202) - Tomcat started on port(s): 8080 (http) with context path '/manager'
+2019-09-20 15:34:53,616:INFO main (StartupInfoLogger.java:59) - Started StudentManagerApplication in 18.411 seconds (JVM running for 25.255)
+2019-09-20 15:34:54,606:INFO RMI TCP Connection(3)-10.10.10.86 (DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-20 15:34:54,606:INFO RMI TCP Connection(3)-10.10.10.86 (FrameworkServlet.java:524) - Initializing Servlet 'dispatcherServlet'
+2019-09-20 15:34:54,621:INFO RMI TCP Connection(3)-10.10.10.86 (FrameworkServlet.java:546) - Completed initialization in 14 ms
+2019-09-20 15:34:57,665:INFO RMI TCP Connection(4)-10.10.10.86 (DruidDataSource.java:1003) - {dataSource-1} inited
+2019-09-20 15:40:15,932:INFO main (StartupInfoLogger.java:50) - Starting StudentManagerApplication on LAPTOP-KAAGVC4H with PID 19132 (D:\WorkSpance\platform\student-manager\target\classes started by lihang in D:\WorkSpance\platform\student-manager)
+2019-09-20 15:40:15,943:INFO main (SpringApplication.java:652) - The following profiles are active: dev
+2019-09-20 15:40:18,801:INFO main (PostProcessorRegistrationDelegate.java:330) - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$7b82e0fd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-20 15:40:19,607:INFO main (TomcatWebServer.java:90) - Tomcat initialized with port(s): 8080 (http)
+2019-09-20 15:40:19,630:INFO main (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8080"]
+2019-09-20 15:40:19,650:INFO main (DirectJDKLog.java:173) - Starting service [Tomcat]
+2019-09-20 15:40:19,652:INFO main (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-09-20 15:40:19,859:INFO main (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+2019-09-20 15:40:19,859:INFO main (ServletWebServerApplicationContext.java:284) - Root WebApplicationContext: initialization completed in 3866 ms
+2019-09-20 15:40:21,458:INFO main (EndpointLinksResolver.java:58) - Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-09-20 15:40:21,591:INFO main (PropertySourcedRequestMappingHandlerMapping.java:69) - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-09-20 15:40:22,624:INFO main (DocumentationPluginsBootstrapper.java:160) - Context refreshed
+2019-09-20 15:40:22,648:INFO main (DocumentationPluginsBootstrapper.java:163) - Found 1 custom documentation plugin(s)
+2019-09-20 15:40:22,689:INFO main (ApiListingReferenceScanner.java:41) - Scanning for api listing references
+2019-09-20 15:40:22,863:INFO main (DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8080"]
+2019-09-20 15:40:22,891:INFO main (TomcatWebServer.java:202) - Tomcat started on port(s): 8080 (http) with context path '/manager'
+2019-09-20 15:40:22,896:INFO main (StartupInfoLogger.java:59) - Started StudentManagerApplication in 7.587 seconds (JVM running for 11.349)
+2019-09-20 15:40:23,963:INFO RMI TCP Connection(3)-10.10.10.86 (DruidDataSource.java:1003) - {dataSource-1} inited
+2019-09-20 15:40:25,093:INFO RMI TCP Connection(5)-10.10.10.86 (DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-20 15:40:25,094:INFO RMI TCP Connection(5)-10.10.10.86 (FrameworkServlet.java:524) - Initializing Servlet 'dispatcherServlet'
+2019-09-20 15:40:25,113:INFO RMI TCP Connection(5)-10.10.10.86 (FrameworkServlet.java:546) - Completed initialization in 19 ms

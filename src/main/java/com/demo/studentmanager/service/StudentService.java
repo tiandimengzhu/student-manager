@@ -9,6 +9,8 @@ package com.demo.studentmanager.service;
 
 import com.demo.studentmanager.entity.Student;
 
+import java.util.List;
+
 /**
  * @author mengzhu
  * @project student-manager
@@ -18,6 +20,7 @@ import com.demo.studentmanager.entity.Student;
 public interface StudentService {
     int add(Student student);
     Student get(int id);
+    List<Student> getList(String name);
     int edit(Student student);
     int delete(int id);
 }

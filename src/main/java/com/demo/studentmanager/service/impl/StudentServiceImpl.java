@@ -7,9 +7,15 @@
  */
 package com.demo.studentmanager.service.impl;
 
+import com.demo.studentmanager.dao.StudentMapper;
 import com.demo.studentmanager.entity.Student;
+import com.demo.studentmanager.entity.StudentExample;
 import com.demo.studentmanager.service.StudentService;
+import io.micrometer.core.instrument.util.StringUtils;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 /**
  * @author mengzhu
@@ -20,23 +26,35 @@ import org.springframework.stereotype.Service;
 @Service
 public class StudentServiceImpl implements StudentService {
 
+    @Autowired
+    private StudentMapper studentMapper;
+
     @Override
     public int add(Student student) {
-        return 0;
+        return studentMapper.insert(student);
     }
 
     @Override
     public Student get(int id) {
-        return null;
+        return studentMapper.selectByPrimaryKey(id);
+    }
+
+    @Override
+    public List<Student> getList(String name) {
+        StudentExample studentExample = new StudentExample();
+        if(StringUtils.isNotBlank(name)){
+            studentExample.createCriteria().andNameLike(name);
+        }
+        return studentMapper.selectByExample(studentExample);
     }
 
     @Override
     public int edit(Student student) {
-        return 0;
+        return studentMapper.updateByPrimaryKeySelective(student);
     }
 
     @Override
     public int delete(int id) {
-        return 0;
+        return studentMapper.deleteByPrimaryKey(id);
     }
 }

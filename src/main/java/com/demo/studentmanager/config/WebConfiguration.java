@@ -11,10 +11,11 @@ import com.thetransactioncompany.cors.CORSFilter;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 /**
- * TODO
+ *
  * @author mengzhu
  * @date 2019/9/19 15:44
  */
@@ -39,5 +40,12 @@ public class WebConfiguration implements WebMvcConfigurer {
         registration.addInitParameter("cors.supportsCredentials", "true");
         registration.setOrder(0);
         return registration;
+    }
+
+    @Override
+    public void addResourceHandlers(ResourceHandlerRegistry registry) {
+        registry.addResourceHandler("/doc.html").addResourceLocations("classpath:/META-INF/resources/").setCachePeriod(0);
+        registry.addResourceHandler("/webjars/**")
+                .addResourceLocations("classpath:/META-INF/resources/webjars/");
     }
 }

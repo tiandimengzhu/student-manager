@@ -10,7 +10,7 @@ package com.demo.studentmanager.service;
 import com.demo.studentmanager.entity.Student;
 
 /**
- * @author lihang@rtmap.com
+ * @author mengzhu
  * @project student-manager
  * @package com.demo.studentmanager.service
  * @date 2019/9/19

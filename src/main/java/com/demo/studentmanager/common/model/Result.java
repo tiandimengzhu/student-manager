@@ -15,7 +15,7 @@ import lombok.ToString;
 import java.io.Serializable;
 
 /**
- * @author lihang@rtmap.com
+ * @author mengzhu
  * @project student-manager
  * @package com.demo.studentmanager.common.model
  * @date 2019/9/19

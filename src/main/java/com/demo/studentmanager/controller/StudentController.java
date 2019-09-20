@@ -22,7 +22,7 @@ public class StudentController {
     @Autowired
     private StudentService studentService;
 
-    @PostMapping("/save")
+    @PostMapping("/add")
     public Result add(@RequestBody Student student){
         return ResultUtil.successData(studentService.add(student));
     }
@@ -30,5 +30,15 @@ public class StudentController {
     @GetMapping("/{id}")
     public Result get(@PathVariable int id){
         return ResultUtil.successData(studentService.get(id));
+    }
+
+    @PutMapping("/edit")
+    public Result edit(@RequestBody Student student){
+        return ResultUtil.successData(studentService.add(student));
+    }
+
+    @DeleteMapping("/{id}")
+    public Result delete(@PathVariable int id){
+        return ResultUtil.successData(studentService.delete(id));
     }
 }

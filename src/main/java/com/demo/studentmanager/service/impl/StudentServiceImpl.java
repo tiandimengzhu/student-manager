@@ -12,7 +12,7 @@ import com.demo.studentmanager.service.StudentService;
 import org.springframework.stereotype.Service;
 
 /**
- * @author lihang@rtmap.com
+ * @author mengzhu
  * @project student-manager
  * @package com.demo.studentmanager.service.impl
  * @date 2019/9/19

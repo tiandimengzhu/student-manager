@@ -26,9 +26,6 @@
         <plugin type="org.mybatis.generator.plugins.CaseInsensitiveLikePlugin"/>
         <!-- 自动生成equals方法和hashcode方法 -->
         <plugin type="org.mybatis.generator.plugins.EqualsHashCodePlugin"/>
-        <!--<plugin type="tk.mybatis.mapper.generator.MapperPlugin">-->
-          <!--<property name="mappers" value="com.rtmap.overlord.meal.api.util.MyMapper"/>-->
-        <!--</plugin>-->
 
         <commentGenerator>
             <property name="suppressAllComments" value="true" />

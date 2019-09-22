@@ -30,6 +30,7 @@
         <fastjson.version>1.2.60</fastjson.version>
         <swagger.bootstrap.version>1.8.9</swagger.bootstrap.version>
         <springfox-swagger2.version>2.9.2</springfox-swagger2.version>
+        <spring-boot-starter-security.version>2.1.0.RELEASE</spring-boot-starter-security.version>
     </properties>
 
     <dependencies>
@@ -112,18 +113,30 @@
             <artifactId>fastjson</artifactId>
             <version>${fastjson.version}</version>
         </dependency>
-        <!-- swagger  接口描述-->
+        <!-- swagger -UI 接口描述-->
         <dependency>
             <groupId>com.github.xiaoymin</groupId>
             <artifactId>swagger-bootstrap-ui</artifactId>
             <version>${swagger.bootstrap.version}</version>
         </dependency>
+        <!-- swagger  接口描述-->
         <dependency>
             <groupId>io.springfox</groupId>
             <artifactId>springfox-swagger2</artifactId>
             <version>${springfox-swagger2.version}</version>
         </dependency>
-
+        <!--安全认证 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
+            <version>${spring-boot-starter-security.version}</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-starter-logging</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>

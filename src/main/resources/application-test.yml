@@ -1,4 +1,8 @@
 spring:
+  security:   #安全验证的用户配置
+    user:
+      name: test
+      password: 123456
   datasource:
     url: jdbc:mysql://localhost:3306/school?useTimezone=true&serverTimezone=GMT%2B8&allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8&useSSL=false
     #连接池的配置信息

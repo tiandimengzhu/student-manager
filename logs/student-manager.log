@@ -42,3 +42,32 @@
 2019-09-20 15:40:25,093:INFO RMI TCP Connection(5)-10.10.10.86 (DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2019-09-20 15:40:25,094:INFO RMI TCP Connection(5)-10.10.10.86 (FrameworkServlet.java:524) - Initializing Servlet 'dispatcherServlet'
 2019-09-20 15:40:25,113:INFO RMI TCP Connection(5)-10.10.10.86 (FrameworkServlet.java:546) - Completed initialization in 19 ms
+2019-09-22 19:30:34,931:INFO main (StartupInfoLogger.java:50) - Starting StudentManagerApplication on MENGZHU-PC with PID 16280 (D:\workspace\javalearn\student-manager\target\classes started by cy_li in D:\workspace\javalearn\student-manager)
+2019-09-22 19:30:34,947:INFO main (SpringApplication.java:652) - The following profiles are active: dev
+2019-09-22 19:30:36,781:INFO main (PostProcessorRegistrationDelegate.java:330) - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f8f93f3f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-22 19:30:37,593:INFO main (TomcatWebServer.java:90) - Tomcat initialized with port(s): 8080 (http)
+2019-09-22 19:30:37,613:INFO main (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8080"]
+2019-09-22 19:30:37,625:INFO main (DirectJDKLog.java:173) - Starting service [Tomcat]
+2019-09-22 19:30:37,625:INFO main (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-09-22 19:30:37,633:INFO main (DirectJDKLog.java:173) - Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2019-09-22 19:30:37,633:INFO main (DirectJDKLog.java:173) - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-09-22 19:30:37,633:INFO main (DirectJDKLog.java:173) - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-09-22 19:30:37,641:INFO main (DirectJDKLog.java:173) - OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2019-09-22 19:30:37,761:INFO main (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+2019-09-22 19:30:37,761:INFO main (ServletWebServerApplicationContext.java:284) - Root WebApplicationContext: initialization completed in 2686 ms
+2019-09-22 19:30:39,558:INFO main (EndpointLinksResolver.java:58) - Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-09-22 19:30:39,674:INFO main (PropertySourcedRequestMappingHandlerMapping.java:69) - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-09-22 19:30:40,194:INFO main (DocumentationPluginsBootstrapper.java:160) - Context refreshed
+2019-09-22 19:30:40,210:INFO main (DocumentationPluginsBootstrapper.java:163) - Found 1 custom documentation plugin(s)
+2019-09-22 19:30:40,246:INFO main (ApiListingReferenceScanner.java:41) - Scanning for api listing references
+2019-09-22 19:30:40,358:INFO main (CachingOperationNameGenerator.java:40) - Generating unique operation named: getUsingGET_1
+2019-09-22 19:30:40,382:INFO main (DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8080"]
+2019-09-22 19:30:40,426:INFO main (TomcatWebServer.java:202) - Tomcat started on port(s): 8080 (http) with context path '/manager'
+2019-09-22 19:30:40,430:INFO main (StartupInfoLogger.java:59) - Started StudentManagerApplication in 6.298 seconds (JVM running for 9.425)
+2019-09-22 19:30:41,685:INFO RMI TCP Connection(1)-192.168.226.1 (DruidDataSource.java:1003) - {dataSource-1} inited
+2019-09-22 19:30:42,941:INFO RMI TCP Connection(4)-192.168.226.1 (DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-22 19:30:42,941:INFO RMI TCP Connection(4)-192.168.226.1 (FrameworkServlet.java:524) - Initializing Servlet 'dispatcherServlet'
+2019-09-22 19:30:43,029:INFO RMI TCP Connection(4)-192.168.226.1 (FrameworkServlet.java:546) - Completed initialization in 88 ms
+2019-09-22 19:31:53,421:WARN http-nio-8080-exec-8 (DispatcherServlet.java:1249) - No mapping for GET /manager/v2/api-doc.html
+2019-09-22 19:31:59,637:WARN http-nio-8080-exec-7 (DispatcherServlet.java:1249) - No mapping for GET /manager/v2/api-docs.html
+2019-09-22 19:32:05,156:WARN http-nio-8080-exec-6 (Swagger2Controller.java:96) - Unable to find specification for group default

@@ -27,7 +27,7 @@
         <lombok.version>1.18.8</lombok.version>
         <mysql-connector-java.version>6.0.6</mysql-connector-java.version>
         <cors-filter.version>2.5</cors-filter.version>
-        <fastjson.version>1.2.60</fastjson.version>
+        <fastjson.version>1.2.83</fastjson.version>
         <swagger.bootstrap.version>1.8.9</swagger.bootstrap.version>
         <springfox-swagger2.version>2.9.2</springfox-swagger2.version>
         <spring-boot-starter-security.version>2.1.0.RELEASE</spring-boot-starter-security.version>
